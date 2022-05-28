@@ -1,0 +1,53 @@
+@import '~swiper/css';
+@import '~swiper/css/pagination';
+@import '~swiper/css/navigation';
+
+
+#container {
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  position: relative;
+  color: white;
+
+  img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    opacity: 0.3;
+    }
+
+}
+
+
+.caption{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: 1px;
+  width: 350px;
+  h1{
+    font-size: 18px;
+    font-weight: bolder;
+    text-transform: uppercase;
+  }
+
+  p{
+    font-size: 14px;
+    font-weight: bold;
+    margin: -7px 0px 2px;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background-color: whitesmoke;
+}
+
+@media screen and (min-width:601px) {
+
+}
+
+@media screen and (max-width:600px) {
+
+}
