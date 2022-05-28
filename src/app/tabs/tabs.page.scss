@@ -1,1 +1,27 @@
+*{
+  font-family: "Nunito", sans-serif;
+}
 
+ion-tab-bar{
+  --background: #2C2B2B;
+  display: flex;
+  justify-content: space-between;
+}
+
+ion-tab-button {
+  --color: #ffff;
+  --color-selected: #537895;
+
+  &::before {
+    background-color: transparent;
+    display: block;
+    content: "";
+    margin: 0 auto;
+    width: 20px;
+    height: 2px;
+  }
+
+  &.tab-selected::before {
+    background-color: #537895;
+  }
+}
