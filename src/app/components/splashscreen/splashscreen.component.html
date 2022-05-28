@@ -1,0 +1,20 @@
+<div class="app-splash-screen" [ngStyle]="{ left: windowWidth, opacity: opacityChange,transition: splashTransition}" *ngIf="showSplash">
+<div class="app-splash-inner">
+  <div class="msg">
+    <h1 class="txt">
+      <!-- A champion is someone who gets up when they can't. -->
+      {{displayRandomMessage()}}
+    </h1>
+    <!-- <br>
+    <br>
+    <hr style="height:10px;border-width:0;background-color:#2F5B8C"> -->
+
+  </div>
+  <div class="app-loader"></div>
+<div class="logo-div">
+   <img class="logo" src="assets/logo.png" alt="logo">
+</div>
+
+  </div>
+</div>
+
