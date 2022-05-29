@@ -1,17 +1,21 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<div class="container">
+  <h1>Login</h1>
+  <div class="form_container">
+    <form class="login">
+      <div class="login_field">
+        <ion-icon class="login_icon" name="person"></ion-icon>
+        <input type="text" class="login_input" placeholder="User name / Email">
+      </div>
+      <div class="login_field">
+        <ion-icon class="login_icon" name="lock-closed"></ion-icon>
+        <input type="password" class="login_input" placeholder="Password">
+      </div>
+      <button class="button login_submit">
+        <span class="button_text">Login</span>
+      </button>
+    </form>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <a href="https://www.google.com/">Forgot password?</a>
+  </div>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
-</ion-content>
+</div>
