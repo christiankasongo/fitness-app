@@ -1,0 +1,22 @@
+@import '~swiper/css';
+@import '~swiper/css/pagination';
+@import '~swiper/css/navigation';
+
+
+#testimonial-container {
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  position: relative;
+  color: white;
+}
+
+.slide{
+  color:#414b56;
+  text-align: center;
+  h1{
+    font-size: 1.2rem;
+  }
+  p{
+    font-size: 0.9rem;
+  }
+}
