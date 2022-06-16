@@ -1,4 +1,4 @@
-//GLOBAL STYLING
+// #region GLOBAL STYLING
 *{
   font-family: "Nunito", sans-serif;
   margin: 0;
@@ -16,13 +16,23 @@ p{
   font-size: 15px;
 }
 
+h1{
+  text-transform: uppercase;
+  color: #f5f5f5;
+  font-weight: bolder;
+  font-size: 20px;
+  margin: 5px 0 10px;
+}
+
 .container {
   text-align: center;
   background-color: #537895;
   padding: 10px;
 }
 
-//HEADER STYLING
+// #endregion
+
+// #region HEADER STYLING
 ion-toolbar{
   --background: #2C2B2B;
   //padding: 6px;
@@ -42,29 +52,25 @@ ion-toolbar{
   margin-right: auto;
   }
 
+// #endregion
 
-//ABOUT SECTION
-
+// #region ABOUT SECTION
 .abt-con{
-  h1{
-    text-transform: uppercase;
-    font-weight: bolder;
-    font-size: 20px;
-    margin: 5px 0 10px;
-  }
 
   h3{
     font-size: 12px;
     text-transform: uppercase;
+    font-weight: 600;
     letter-spacing: 1px;
+    color: #f5f5f5;
   }
 
   h4{
     margin: 4px 0 10px;
-    font-size: 12px;
+    font-size: 11.5px;
     text-transform: uppercase;
     font-style: italic;
-    color: #a9a9a9;
+    color: #f5f5f5;
   }
 }
 
@@ -106,7 +112,9 @@ ion-toolbar{
   box-shadow: 4px 4px 8px -3px rgb(0 0 0 / 15%);
 }
 
-//SERVICE SECTION
+// #endregion
+
+// #region SERVICE SECTION
 .service-con{
   background-color: #f5f5f5;
   color: #2C2B2B;
@@ -119,10 +127,7 @@ ion-toolbar{
   }
 
   h1{
-    text-transform: uppercase;
-    font-weight: bolder;
-    font-size: 20px;
-    margin: 5px 0 10px;
+    color: #2C2B2B;
   }
 
   h2{
@@ -148,7 +153,6 @@ ion-toolbar{
     overflow: hidden;
     border-radius: 5px;
     justify-content: center;
-    //box-shadow: 4px 4px 8px -3px rgb(0, 0, 0, 0.15);
 
     h1{
       color: #2f5b8c;
@@ -173,8 +177,9 @@ ion-toolbar{
     max-width: 20%;
     height: auto;
   }
+// #endregion
 
-  //PROMO SECTION
+// #region PROMO SECTION
 .promo-con{
   background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%),url("/../assets/pt2.jpg");
   background-repeat: no-repeat;
@@ -220,128 +225,125 @@ color: #FFF;
   margin-bottom: 45px;
 }
 
-//MEMBERSHIP SECTION
-.membership-con{
-  h1{
-    text-transform: uppercase;
-    font-weight: bolder;
-    font-size: 20px;
-    margin: 5px 0 10px;
-  }
-}
+// #endregion
 
+// #region MEMBERSHIP SECTION
 .price-cards-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-auto-rows: auto;
-  grid-gap: 40px;
   height: 100%;
   padding: 10px;
   text-align: center;
 }
 
-.price-card {
-  text-align: center;
-  position: relative;
-  border-radius: 15px;
-  padding: 40px 20px;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-  transition: .5s;
-  overflow: hidden;
+.wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
-
-.basic,
-.basic .title .fa {
-  background-color: #22262c;
-  //background-image: linear-gradient(315deg, #f3f4f7 0%, #caccd1 74%);
+.card {
+	background: #f5f5f5;
+	border-radius: 0.25rem;
+	position: relative;
+	min-width: 150px;
+	margin: 1rem;
+	text-align: center;
 }
 
-.standard,
-.standard .title .fa{
-  background-color: #f6f6f6;
-//background-image: linear-gradient(315deg, #f6f6f6 0%, #e9e9e9 74%);
+.card-banner {
+	border-bottom: 1px solid #d7dfe2;
+	padding: 3rem 0 1rem;
+
+	.plan-tag {
+		font-size: 0.7rem;
+		font-weight: bold;
+		color: #414b56;
+		background: #c5ab84;
+		padding: 0.5rem 1rem;
+		text-transform: uppercase;
+		position: absolute;
+		z-index: 1;
+		top: 1rem;
+		left: 1rem;
+		border-radius: 0.25rem;
+	}
+
+	.highlight {
+		color: white;
+		background: rgb(85, 148, 196);
+	}
+
+  .prem {
+		color: #414b56;
+		background: #A9A9A9;
+	}
+
+	.plan-price {
+		display: inline-block;
+	}
+
+	.price {
+		font-size: 2.5rem;
+		position: relative;
+		margin-bottom: -0.5rem;
+		color: #414b56;
+	}
+
+	.price::before {
+		content: "£";
+		display: inline-block;
+		font-size: 20px;
+		top: 0.8rem;
+		position: absolute;
+		text-align: left;
+		left: -1.5rem;
+	}
+
+	.price-month {
+		font-size: 0.9rem;
+    color:#414b56;
+	}
 }
 
-.premium,
-.premium .title .fa {
-  background-color: #f1f2f6;
-//background-image: linear-gradient(315deg, #f1f2f6 0%, #c9c6c6 74%);
+.card-body {
+	margin: 2rem 0;
 
+	.plan-feature-list {
+		margin: 2rem 4rem;
+		list-style: none;
+	}
+
+	.plan-feature {
+		font-size: 0.8rem;
+		margin: 1.5rem 0;
+		text-align: left;
+	}
+
+	.plan-feature::before {
+		font-weight: 900;
+		font-size: 1.3rem;
+		content: "\2713";
+		color: var(--clr-gray-lightmed);
+		display: inline-block;
+		position: relative;
+		vertical-align: middle;
+		margin-right: 1rem;
+	}
 }
 
-.price-card::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 40%;
-  background: rgba(255, 255, 255, 0.1);
-  z-index: 1;
-  transform: skewY(-5deg) scale(1.5);
+.btn {
+	width: 250px;
+	color: #2f5b8c;
+	padding: 1rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	border: 2px solid #2f5b8c;
+	background: white;
+	border-radius: 0.25rem;
 }
 
-.title .fa {
-  color: #fff;
-  font-size: 60px;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 100px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.20);
-}
+// #endregion
 
-.title h2 {
-  position: relative;
-  margin: 20px 0 0;
-  color: #2C2B2B;
-  font-size: 26px;
-  z-index: 2;
-}
-
-.price {
-  position: relative;
-  z-index: 2;
-}
-
-.price h4 {
-  margin: 0;
-  padding: 20px 0;
-  color: #2C2B2B;
-  font-size: 40px;
-}
-
-.option {
-  position: relative;
-  z-index: 2;
-}
-
-.option ul {
-  margin: 0;
-  padding: 0;
-}
-
-.option ul li {
-  margin: 0 0 10px;
-  padding: 0;
-  list-style: none;
-  color: #fff;
-  font-size: 16px;
-}
-
-.price-card {
-  position: relative;
-  z-index: 2;
-  border-radius: 8px;
-  //margin: 30px auto 8px;
-  text-decoration: none;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.20);
-  font-weight: bold;
-}
-
-//TESTIMONIAL SECTION
+// #region TESTIMONIAL SECTION
 .test-con{
   background-color: #f5f5f5;
   color: #2C2B2B;
@@ -352,7 +354,12 @@ color: #FFF;
     background:#2C2B2B;
     margin: 14px auto;
   }
+  h1{
+    color: #2C2B2B;
+  }
   p{
     color: #2C2B2B;
   }
 }
+
+// #endregion

@@ -24,12 +24,11 @@
 
 <ion-content [fullscreen]="true">
 
-  <!-- ======= Image Slide Component ======= -->
+ <!-- #region Image Slide Component -->
     <app-carousel></app-carousel>
-<!-- ======= End ======= -->
+<!-- #endregion -->
 
-
-  <!-- ======= About section ======= -->
+  <!-- #region About section -->
   <div class="abt-con container">
     <div class="abt-grid">
       <div class="grid-items">
@@ -49,18 +48,18 @@
     <h3>Nat Surname</h3>
     <h4>Founder & Personal trainer</h4>
     <p>
-      "As a professional trainer, my passion is to guide the world towards a healthier lifestyle. Everybody is unique, with their own strengths and limitations.
+      &ldquo;As a professional trainer, my passion is to guide the world towards a healthier lifestyle. Everybody is unique, with their own strengths and limitations.
       My method is to build a custom plan based on your health, schedule and more importantly, fitness goals. My aim is to have your mind and body work in harmony,
-      to transform your body and influence you to make more mindful decisions when it comes to your health."
+      to transform your body and influence you to make more mindful decisions when it comes to your health.&rdquo;
     </p>
     <button class="about-btn">Read More</button>
     </div>
 
     </div>
     </div>
-  <!-- ======= End ======= -->
+ <!-- #endregion -->
 
-<!-- ======= Service Section ======= -->
+<!-- #region Service Section -->
 <div class="service-con container">
   <div class="border"></div>
   <h1>services</h1>
@@ -117,9 +116,9 @@
 
   </div>
 </div>
-<!-- ======= End ======= -->
+<!-- #endregion -->
 
-<!-- ======= Promotion Section ======= -->
+<!-- #region Promotion Section -->
 <div class="promo-con container">
   <div class="promo-container">
     <div class="promo-text">
@@ -129,85 +128,86 @@
       </div>
   </div>
   </div>
-<!-- ======= End ======= -->
+<!-- #endregion -->
 
-<!-- ======= Membership Section ======= -->
+<!-- #region Membership Section -->
 <div class="membership-con container">
   <div class="border"></div>
   <h1>Price Plans</h1>
-  <p>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-    Tenetur debitis fuga quia eos, voluptatem error rem eligendi quod quam,
-    quis quae voluptates, dolorem pariatur dolore labore consequuntur.
+  <p> Find a plan that's right for you <br>Every plan comes with a 30-day free trial.
   </p>
 
-  <div class="price-cards-container">
-    <div class="price-card basic">
-      <div class="title">
-        <h2>Silver Membership</h2>
-      </div>
-      <div class="price">
-        <h4><sup>£</sup>25</h4>
-      </div>
-      <div class="option">
-        <ul>
-          <li><i class="fa fa-check" aria-hidden="true"></i> 10 GB Space</li>
-          <li><i class="fa fa-check" aria-hidden="true"></i> 3 Domain Names</li>
-          <li><i class="fa fa-check" aria-hidden="true"></i> 20 Email Address</li>
-          <li><i class="fa fa-times" aria-hidden="true"></i> Live Support</li>
-        </ul>
-      </div>
-      <a class="btn btn-light btn-block" href="">Choose Plan</a>
-    </div>
-    <div class="price-card standard">
-      <div class="title">
-        <h2>Gold Membership</h2>
-      </div>
-      <div class="price">
-        <h4><sup>£</sup>50</h4>
-      </div>
-      <div class="option">
-        <ul>
-          <li><i class="fa fa-check" aria-hidden="true"></i> 50 GB Space</li>
-          <li><i class="fa fa-check" aria-hidden="true"></i> 5 Domain Names</li>
-          <li><i class="fa fa-check" aria-hidden="true"></i> Unlimited Email Address</li>
-          <li><i class="fa fa-times" aria-hidden="true"></i> Live Support</li>
-        </ul>
-      </div>
-      <a class="btn btn-light btn-block" href="">Choose Plan</a>
-    </div>
-    <div class="price-card premium">
-      <div class="title">
-        <h2>Premium Membership</h2>
-      </div>
-      <div class="price">
-        <h4><sup>£</sup>100</h4>
-      </div>
-      <div class="option">
-        <ul>
-          <li><i class="fa fa-check" aria-hidden="true"></i> Unlimited GB Space</li>
-          <li><i class="fa fa-check" aria-hidden="true"></i> 30 Domain Names</li>
-          <li><i class="fa fa-check" aria-hidden="true"></i> Unlimited Email Address</li>
-          <li><i class="fa fa-check" aria-hidden="true"></i> Live Support</li>
-        </ul>
-      </div>
-      <a class="btn btn-light btn-block" href="">Choose Plan</a>
-    </div>
-  </div>
-  </div>
-<!-- ======= End ======= -->
+  <div class="wrapper">
 
-<!-- ======= Testimonial Section ======= -->
+		<!-- 	Bronze Card	 -->
+		<div class="card">
+			<div class="card-banner">
+				<p class="plan-tag">Bronze</p>
+				<div class="plan-price">
+					<h2 class="price">20</h2>
+					<p class="price-month">per month</p>
+				</div>
+			</div>
+			<div class="card-body">
+				<ul class="plan-feature-list">
+					<li class="plan-feature">50gb Data Storage</li>
+					<li class="plan-feature">10gb of Local Storage</li>
+					<li class="plan-feature">Domain name for 1 year</li>
+				</ul>
+				<button class="btn">Purchase Plan</button>
+			</div>
+		</div>
+
+
+		<!-- 	Most popular card -->
+		<div class="card">
+			<div class="card-banner">
+				<p class="plan-tag highlight">most popular</p>
+				<div class="plan-price">
+					<h2 class="price">250</h2>
+					<p class="price-month">per month</p>
+				</div>
+			</div>
+			<div class="card-body">
+				<ul class="plan-feature-list">
+					<li class="plan-feature">Unlimited Data Storage</li>
+					<li class="plan-feature">10gb of Local Storage</li>
+					<li class="plan-feature">Domain name for 1 year</li>
+				</ul>
+				<button class="btn">Purchase Plan</button>
+			</div>
+		</div>
+
+
+		<!-- 	Premium Card -->
+		<div class="card">
+			<div class="card-banner">
+				<p class="plan-tag prem">premium</p>
+				<div class="plan-price">
+					<h2 class="price">500</h2>
+					<p class="price-month">per month</p>
+				</div>
+			</div>
+			<div class="card-body">
+				<ul class="plan-feature-list">
+					<li class="plan-feature">Unlimited Data Storage</li>
+					<li class="plan-feature">100gb of Local Storage</li>
+					<li class="plan-feature">Domain name for 5 years</li>
+				</ul>
+				<button class="btn">Purchase Plan</button>
+			</div>
+		</div>
+	</div>
+
+  </div>
+<!-- #endregion -->
+
+<!-- #region Testimonial Section -->
 <div class="test-con container">
   <div class="border"></div>
   <h1>Testimonials</h1>
-  <p>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-    Tenetur debitis fuga quia eos, voluptatem error rem eligendi quod quam,
-    quis quae voluptates, dolorem pariatur dolore labore consequuntur.
-  </p>
-
+  <app-testimonial></app-testimonial>
   </div>
-<!-- ======= End ======= -->
+<!-- #endregion -->
 
 </ion-content>

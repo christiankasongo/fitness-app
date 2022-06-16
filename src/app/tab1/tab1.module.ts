@@ -7,6 +7,7 @@ import { Tab1Page } from './tab1.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 import { Tab1PageRoutingModule } from './tab1-routing.module';
 import { CarouselComponentModule } from '../components/carousel/carousel.component.module';
+import { TestimonialComponentModule } from '../components/testimonial/testimonial.component.module';
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { CarouselComponentModule } from '../components/carousel/carousel.compone
     FormsModule,
     ExploreContainerComponentModule,
     Tab1PageRoutingModule,
-    CarouselComponentModule
+    CarouselComponentModule,
+    TestimonialComponentModule
   ],
   declarations: [
     Tab1Page
