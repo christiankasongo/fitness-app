@@ -74,7 +74,7 @@ ion-toolbar{
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 .grid-items{
-  padding: 20px;
+  padding: 10px;
 }
 
 .border {
@@ -96,6 +96,7 @@ ion-toolbar{
 .about-btn{
   margin-top: 20px;
   background: #a9a9a9;
+  color: #f5f5f5;
   text-transform: uppercase;
   font-size: 10px;
   font-weight: 600;
@@ -252,20 +253,20 @@ color: #FFF;
 
 .basic,
 .basic .title .fa {
-  background-color: #f3f4f7;
-  background-image: linear-gradient(315deg, #f3f4f7 0%, #caccd1 74%);
+  background-color: #22262c;
+  //background-image: linear-gradient(315deg, #f3f4f7 0%, #caccd1 74%);
 }
 
 .standard,
 .standard .title .fa{
   background-color: #f6f6f6;
-background-image: linear-gradient(315deg, #f6f6f6 0%, #e9e9e9 74%);
+//background-image: linear-gradient(315deg, #f6f6f6 0%, #e9e9e9 74%);
 }
 
 .premium,
 .premium .title .fa {
   background-color: #f1f2f6;
-background-image: linear-gradient(315deg, #f1f2f6 0%, #c9c6c6 74%);
+//background-image: linear-gradient(315deg, #f1f2f6 0%, #c9c6c6 74%);
 
 }
 

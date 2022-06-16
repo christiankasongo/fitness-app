@@ -3,42 +3,76 @@
 @import '~swiper/css/navigation';
 
 
-#container {
+#carousel-container {
   font-family: "Nunito", sans-serif;
   text-align: center;
   position: relative;
   color: white;
 
-  img{
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-    opacity: 0.3;
-    }
+  // img{
+  //   max-width: 100%;
+  //   height: auto;
+  //   object-fit: cover;
+  //   opacity: 0.3;
+  //   }
 
 }
 
+.Slide1 {
+  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%),url("/../assets/pt2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  height: 250px;
+}
 
-.caption{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: 'Nunito', sans-serif;
+.Slide2{
+  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%),url("/../assets/sliderImg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  height: 250px;
+}
+
+.Slide3{
+  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%),url("/../assets/sliderImg3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  height: 250px;
+}
+
+.slide-text{
+  color: #FFF;
   letter-spacing: 1px;
   width: 350px;
-  h1{
+  }
+  .slide-text h1{
     font-size: 18px;
     font-weight: bolder;
     text-transform: uppercase;
   }
-
-  p{
+  .slide-text p{
+    margin-bottom: 45px;
     font-size: 14px;
     font-weight: bold;
     margin: -7px 0px 2px;
   }
-}
 
 .swiper-pagination-bullet-active {
   background-color: whitesmoke;
