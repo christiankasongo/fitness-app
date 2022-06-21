@@ -27,6 +27,6 @@ export class TestimonialComponent{
       disableOnInteraction: false
     },
     loop:true,
-    pagination: true,
+    pagination : true,
   };
 }

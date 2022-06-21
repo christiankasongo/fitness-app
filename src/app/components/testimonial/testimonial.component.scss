@@ -8,15 +8,26 @@
   text-align: center;
   position: relative;
   color: white;
+
+  .slide{
+    color:#414b56;
+    text-align: center;
+    h1{
+      font-size: 1.2rem;
+    }
+    p{
+      font-size: 0.9rem;
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #2C2B2B!important;
+  }
+
+  .swiper-pagination-bullets {
+    bottom: 0;
+  }
+
 }
 
-.slide{
-  color:#414b56;
-  text-align: center;
-  h1{
-    font-size: 1.2rem;
-  }
-  p{
-    font-size: 0.9rem;
-  }
-}
+

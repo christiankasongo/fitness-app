@@ -1,17 +1,39 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<div class="container">
+  <h1>Register</h1>
+  <div class="form_container">
+    <form class="Register">
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+      <div class="register_field">
+        <ion-icon class="reg_icon" name="person"></ion-icon>
+        <input type="text" class="register_input" placeholder="First Name">
+      </div>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
-</ion-content>
+      <div class="register_field">
+        <ion-icon class="reg_icon" name="person"></ion-icon>
+        <input type="text" class="register_input" placeholder="Last Name">
+      </div>
+
+      <div class="register_field">
+        <ion-icon class="reg_icon" name="mail"></ion-icon>
+        <input type="email" class="register_input" placeholder="Email">
+      </div>
+
+      <div class="register_field">
+        <ion-icon class="reg_icon" name="lock-closed"></ion-icon>
+        <input type="password" class="register_input" placeholder="Password">
+      </div>
+
+      <div class="register_field">
+        <ion-icon class="reg_icon" name="lock-closed"></ion-icon>
+        <input type="password" class="register_input" placeholder="Re-type Password">
+      </div>
+
+
+      <button class="button reg_submit">
+        <span class="button_text">Register</span>
+      </button>
+    </form>
+
+  </div>
+
+</div>
