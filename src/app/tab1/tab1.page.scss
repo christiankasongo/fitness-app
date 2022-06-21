@@ -228,11 +228,6 @@ color: #FFF;
 // #endregion
 
 // #region MEMBERSHIP SECTION
-.price-cards-container {
-  height: 100%;
-  padding: 10px;
-  text-align: center;
-}
 
 .wrapper {
 	display: flex;
@@ -310,6 +305,7 @@ color: #FFF;
 	.plan-feature-list {
 		margin: 2rem 4rem;
 		list-style: none;
+    color:#414b56;
 	}
 
 	.plan-feature {
@@ -322,7 +318,7 @@ color: #FFF;
 		font-weight: 900;
 		font-size: 1.3rem;
 		content: "\2713";
-		color: var(--clr-gray-lightmed);
+		color: #414b56;
 		display: inline-block;
 		position: relative;
 		vertical-align: middle;
